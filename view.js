@@ -2,7 +2,7 @@ const figlet = require('figlet')
 const chalk = require('chalk')
 const inquirer = require('inquirer')
 
-function getTitle(){
+function Title(){
     return chalk.green(
         figlet.textSync(
             'Tip Calculator App',
@@ -14,11 +14,11 @@ function getTitle(){
     )
 }
 
-function getTable(model){
-    const {total} = model
-    const {tip} = model
+function Table(model){
     const {bill_amount} = model
+    const {tip} = model
     const {tip_money} = model
+    const {total} = model
     return [
         {"Bill Amount": bill_amount + '$', "Tip (%)": tip + '%' , Tip: tip_money + '$', Total: total + '$'},
     ]
@@ -49,8 +49,8 @@ function inputForm(model){
 // Get actual console view
 function view(model){
     return {
-        title: getTitle(),
-        table: getTable(model)
+        title: Title(),
+        table: Table(model)
     }
 }
 
