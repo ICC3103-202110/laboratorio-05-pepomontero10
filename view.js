@@ -20,7 +20,8 @@ function Table(model){
     const {tip_money} = model
     const {total} = model
     return [
-        {"Bill Amount": bill_amount + '$', "Tip (%)": tip + '%' , Tip: tip_money + '$', Total: total + '$'},
+        {"Bill Amount": bill_amount + '$', "Tip (%)": tip + '%', 
+        Tip: tip_money + '$', Total: total + '$'},
     ]
 }
 
