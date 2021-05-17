@@ -3,7 +3,7 @@ const chalk = require('chalk')
 const inquirer = require('inquirer')
 
 function Title(){
-    return chalk.green(
+    return chalk.blue(
         figlet.textSync(
             'Tip Calculator',
             {
