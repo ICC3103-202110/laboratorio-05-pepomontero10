@@ -35,12 +35,26 @@ function inputForm(model){
             type: 'number',
             message: message,
             default: input,
+            validate: function(value){
+                if(value >= 0){
+                    return true
+                } else {
+                    return 'Enter a number (START OVER)'
+                }
+            }
         },
         {
             name: 'bill_tip',
             type: 'number',
             message: message2,
             default: input,
+            validate: function(value){
+                if(value >= 0){
+                    return true
+                } else {
+                    return 'Enter a number (START OVER)'
+                }
+            }
         }
     ])
 }
