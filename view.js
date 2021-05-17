@@ -5,7 +5,7 @@ const inquirer = require('inquirer')
 function Title(){
     return chalk.green(
         figlet.textSync(
-            'Tip Calculator App',
+            'Tip Calculator',
             {
                 horizontalLayout: 'full',
                 font: 'Nancyj-Underlined'
